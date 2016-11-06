@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" sidebar="false" showHeader="false" standardStylesheets="false">
+
+  <h1>Thank you!</h1> 
+  
+</apex:page>

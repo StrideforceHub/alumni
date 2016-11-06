@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Importance__c</fullName>
+        <externalId>false</externalId>
+        <label>Importance</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Required</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Desired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Job_Posting__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Posting</label>
+        <referenceTo>Job_Posting__c</referenceTo>
+        <relationshipName>Job_Qualifications</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Qualifications__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Qualifications</globalPicklist>
+        <label>Qualifications</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Weight__c</fullName>
+        <externalId>false</externalId>
+        <label>Weight</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Years_of_Experience__c</fullName>
+        <externalId>false</externalId>
+        <label>Years of Experience</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>DEPRECATED Job Qualification</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Importance__c</columns>
+        <columns>Weight__c</columns>
+        <columns>Qualifications__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>JQN-{0000}</displayFormat>
+        <label>Job Qualification Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Qualifications</pluralLabel>
+    <recordTypes>
+        <fullName>Skill</fullName>
+        <active>true</active>
+        <label>Skill</label>
+        <picklistValues>
+            <picklist>Importance__c</picklist>
+            <values>
+                <fullName>Desired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Qualifications</picklist>
+            <values>
+                <fullName>A%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adobe Creative Suite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associates of Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%2ES%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%2ES%2E in Business%2C Computer Science%2C or related field</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CCNA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cisco training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CompTIA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CompTia A%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CompTia Network%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CompTia Server%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure printing and file access to network directory resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Document workstation and network configuration and maintenance procedures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Front End development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HTML%2FCSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High School diploma or GED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install%2C configure%2C upgrade%2C and maintain desktops and laptops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install%2C configure%2C upgrade%2C and maintain other devices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install%2C configure%2C upgrade%2C and maintain printers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Install%2C configure%2C upgrade%2C and maintain printers and scanners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation of PC software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Knowledge of HelpDesk Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linux</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCITP%28Enterprise Desktop Support Technician 7%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MS Windows OS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mac OSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Microsoft Active Directory%2C Exchange%2C DNS%2FDHCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Administration Support - under direction of senior IT Staff%2C support%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network cabling%2C toning out network ports%2C activating ports on a switch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PC hardware support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PC machine setup and deployment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project assistance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research and resolve issues concerning user network access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIEM technologies %28HP ArcSight and McAfee ESM%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce Administrator Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce Certified Advanced Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce Certified Force%2Ecom Developer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce Certified Sys Admin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scripting %28VBS%2C batch%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support User Network Access%3A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support user Network Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>System imaging%2C hardware repair and support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tracking inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Troubleshooting of PCs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video%2C teleconferencing systems support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>bachelors of science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>master%27s degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>thin clients</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>written and oral skills</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

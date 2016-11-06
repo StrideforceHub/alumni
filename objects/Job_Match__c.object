@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Matches based on requirements and job seeker criteria</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Company__c</fullName>
+        <externalId>false</externalId>
+        <formula>Job_Posting__r.Organization__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Posted__c</fullName>
+        <externalId>false</externalId>
+        <formula>Job_Posting__r.Date_of_Posting__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Posted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Employer_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Employer Feedback</label>
+        <picklist>
+            <picklistValues>
+                <fullName>not qualified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>compensation inadequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>unprofessional</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>unprepared</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>not right fit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>tech experience inadequate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>education institution unknown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>outdated skills</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interested__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The alumni is interested in this job.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check box if you are interested in this job.</inlineHelpText>
+        <label>Interested</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Job_Posting__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Posting</label>
+        <referenceTo>Job_Posting__c</referenceTo>
+        <relationshipLabel>Job Matches</relationshipLabel>
+        <relationshipName>Job_Matches</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Job_Seeker__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Seeker</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Job Matches</relationshipLabel>
+        <relationshipName>Job_Matches</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Job_Posting__r.Job_Title__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Not_interested__c</fullName>
+        <description>Reason not interested in this match.</description>
+        <externalId>false</externalId>
+        <label>Not interested</label>
+        <picklist>
+            <picklistValues>
+                <fullName>not qualified,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>distance too far,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>compensation not adequate,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>hours not enough,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>company not a good fit,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>work-life balance doesn&apos;t fit,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>offered better job,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>no longer looking,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>inadequate benefits,</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>other reasons</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Percent_Match__c</fullName>
+        <externalId>false</externalId>
+        <label>Percent Match</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>Not interested
+waiting for a call back
+No transportation
+hours offered
+benefits
+salary compensation
+not the fit fit in company culture</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What stage are you in you r job search</inlineHelpText>
+        <label>Stage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirmed Interest</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting on Interview</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Scheduled Interview</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting on Callback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Upsert_Key__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>Upsert Key</label>
+        <length>37</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Job Match</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Company__c</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Job_Posting__c</columns>
+        <columns>Job_Seeker__c</columns>
+        <columns>Interested__c</columns>
+        <columns>Date_Posted__c</columns>
+        <columns>NAME</columns>
+        <columns>Percent_Match__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Match-{00000}</displayFormat>
+        <label>Job Match Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Matches</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Other_reasons_not_interested</fullName>
+        <active>true</active>
+        <label>Other reasons not interested</label>
+        <picklistValues>
+            <picklist>Employer_Feedback__c</picklist>
+            <values>
+                <fullName>compensation inadequate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>education institution unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>not qualified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>not right fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>outdated skills</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>tech experience inadequate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unprepared</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>unprofessional</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Not_interested__c</picklist>
+            <values>
+                <fullName>company not a good fit%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>compensation not adequate%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>distance too far%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hours not enough%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>inadequate benefits%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>no longer looking%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>not qualified%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>offered better job%2C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>other reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>work-life balance doesn%27t fit%2C</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>Confirmed Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scheduled Interview</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Callback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on Interview</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

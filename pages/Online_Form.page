@@ -1,0 +1,45 @@
+<apex:page standardController="contact" showHeader="false" sidebar="false" standardStylesheets="false">
+
+    <flow:interview name="SampleFormWorkingCopy" buttonLocation="bottom" finishLocation="Thank_You">
+        <apex:param name="thisContactID" value="{!contact.id}"/>
+    </flow:interview>
+    
+    <p/> 
+    <h2>Qualifications:</h2>        
+    <table border="0" width="100%" id="table">
+    <tr>
+           <td>Qualification</td>
+           <td>Years</td>       
+           <td>Description</td>
+           <td>Detail</td>
+    </tr>
+    <tr>
+           <apex:repeat value="{!Contact.Job_Seeker_Qualifications__r}" var="q">
+              <tr>
+                 <td>{!q.Qualifications__c}</td>
+                 <td>{!q.Years_of_Experience__c}</td>             
+                 <td>{!q.Desc__c}</td>
+                 <td>{!q.Detail__c}</td>             
+              </tr>
+           </apex:repeat>  
+    </tr>
+    </table>  
+ 
+    <p/>    
+    <h2>Here are the most recent job postings:</h2>
+
+    <table border="0" width="100%" id="table">
+    <tr>
+           <td>Title</td>
+           <td>Company</td>       
+    </tr>
+    <tr>
+           <apex:repeat value="{!Contact.Job_Matches__r}" var="m">
+              <tr>
+                 <td>{!m.Job_Title__c}</td>
+                 <td>{!m.Company__c}</td>                          
+              </tr>
+           </apex:repeat>  
+    </tr>
+    </table>    
+</apex:page>

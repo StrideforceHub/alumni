@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Closing_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Posting__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Posting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>4000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>14</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Title</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Organization__c</fullName>
+        <externalId>false</externalId>
+        <label>Organization</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Job Postings</relationshipLabel>
+        <relationshipName>Job_Postings</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Qualification__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Qualifications</globalPicklist>
+        <label>Qualification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Qualifications__c</fullName>
+        <description>This is what the company job description says and is not used in matching. An algorithm will create records in the Qualifications data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is what the company job description says and is not used in matching. An algorithm will create records in the Qualifications data.</inlineHelpText>
+        <label>Qualifications</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Source_URL__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The page for this job posting at a third party website</inlineHelpText>
+        <label>Source URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <description>Alabama 
+Alaska 
+Arizona 
+Arkansas 
+California 
+Colorado 
+Connecticut 
+Delaware 
+Florida 
+Georgia 
+Hawaii 
+Idaho 
+Illinois
+Indiana 
+Iowa 
+Kansas 
+Kentucky 
+Louisiana 
+Maine 
+Maryland 
+Massachusetts 
+Michigan 
+Minnesota 
+Mississippi 
+Missouri 
+Montana
+Nebraska 
+Nevada 
+New Hampshire 
+New Jersey 
+New Mexico 
+New York 
+North Carolina 
+North Dakota 
+Ohio 
+Oklahoma 
+Oregon 
+Pennsylvania
+Rhode Island 
+South Carolina 
+South Dakota 
+Tennessee 
+Texas 
+Utah 
+Vermont 
+Virginia 
+Washington 
+West Virginia 
+Wisconsin 
+Wyoming</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select a a state from the picklist</inlineHelpText>
+        <label>State</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CA</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>60</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Who_Input__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This will go away once we have more users</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will go away once we have more users</inlineHelpText>
+        <label>Who Input</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Who Input Job Postings</relationshipLabel>
+        <relationshipName>Job_Postings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Zip__c</fullName>
+        <description>Zip code</description>
+        <externalId>false</externalId>
+        <label>Zip</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Job Posting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Organization__c</columns>
+        <columns>City__c</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Date_of_Posting__c</columns>
+        <columns>Closing_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Empty_cities</fullName>
+        <columns>NAME</columns>
+        <columns>Organization__c</columns>
+        <columns>City__c</columns>
+        <columns>Date_of_Posting__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>City__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Empty cities</label>
+    </listViews>
+    <listViews>
+        <fullName>Help_Desk</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Organization__c</columns>
+        <columns>Date_of_Posting__c</columns>
+        <columns>City__c</columns>
+        <columns>Closing_Date__c</columns>
+        <columns>Source_URL__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Title__c</field>
+            <operation>contains</operation>
+            <value>Help Desk Analyst</value>
+        </filters>
+        <filters>
+            <field>Job_Title__c</field>
+            <operation>contains</operation>
+            <value>Help Desk</value>
+        </filters>
+        <label>Help Desk</label>
+    </listViews>
+    <listViews>
+        <fullName>Salesforce</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Organization__c</columns>
+        <columns>Date_of_Posting__c</columns>
+        <columns>City__c</columns>
+        <columns>Source_URL__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Title__c</field>
+            <operation>contains</operation>
+            <value>Salesforce</value>
+        </filters>
+        <filters>
+            <field>Job_Title__c</field>
+            <operation>contains</operation>
+            <value>Salesforce Administrator</value>
+        </filters>
+        <label>Salesforce</label>
+    </listViews>
+    <listViews>
+        <fullName>San_Francisco</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>City__c</columns>
+        <columns>Organization__c</columns>
+        <columns>Closing_Date__c</columns>
+        <columns>Date_of_Posting__c</columns>
+        <columns>Source_URL__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>City__c</field>
+            <operation>equals</operation>
+            <value>San Francisco</value>
+        </filters>
+        <label>San Francisco</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Job-{00000}</displayFormat>
+        <label>Job Posting Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Postings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Match_with_Candidates</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Match with Candidates</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://stridelabs.org/job-candidate-matching/</url>
+    </webLinks>
+</CustomObject>
