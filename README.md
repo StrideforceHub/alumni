@@ -1,18 +1,9 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/StrideforceHub/alumni/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Salesforce generously donates 10 enterprise licenses to nonprofits. This benefit will be realized by having a multi-tenant solution that cenralizes data storage and the use of Communities but synchronizes data with local instances at each nonprofit.
 
-# Header 1
-## Header 2
+## Resources
 ### Header 3
 
 - Bulleted
@@ -23,15 +14,9 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Sample Link](https://docs.google.com/presentation/d/1gtWSxTxbRnCadQIiGA_Oni8cjF81FIHafodTwfEPxc0) and ![sampleImage](http://certification.salesforce.com/certification-detail-print?conId=003G0000017E8koIAC)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/StrideforceHub/alumni/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
