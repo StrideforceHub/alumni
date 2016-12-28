@@ -8,7 +8,7 @@ We are developing an app that will allow nonprofits to better connect with their
   ```markdown
  -Salesforce generously donates 10 enterprise licenses to nonprofits. This benefit will be realized by having a multi-tenant solution that cenralizes data storage and the use of Communities but synchronizes data with local instances at each nonprofit.
   
-[Project description](http://StrideforceHub.github.io/Hackathon2016)
+[Project description](https://github.com/orgs/StrideforceHub/projects/1)
   
  
   
